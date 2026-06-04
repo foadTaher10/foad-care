@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המלצות - פואד</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <div class="logo-main">
+            🩺 פואד
+        </div>
+
+        <div class="logo-sub">
+            אח מוסמך | השגחה וליווי פרטי
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">דף הבית</a>
+
+        <a href="recommendations.html">המלצות</a>
+
+        <a href="about.html">אודות</a>
+
+        <a href="contact.html">צור קשר</a>
+
+    </nav>
+
+</header>
+
+<section class="recommendations-page">
+
+    <h1>מה המשפחות מספרות?</h1>
+
+    <p class="recommendations-intro">
+        האמון של המשפחות הוא הדבר החשוב ביותר עבורי.
+    </p>
+
+    <div class="recommendations-gallery">
+
+        <div class="recommendation-card">
+
+            <img src="images/reco1.jpeg" alt="recommendation">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+        </div>
+
+        <div class="recommendation-card">
+
+            <img src="images/reco2.jpeg" alt="recommendation">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+        </div>
+
+        <div class="recommendation-card">
+
+            <img src="images/reco3.jpeg" alt="recommendation">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+        </div>
+
+
+               <div class="recommendation-card">
+
+            <img src="images/reco4.jpeg" alt="recommendation">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+        </div>
+
+               <div class="recommendation-card">
+
+            <img src="images/reco6.jpeg" alt="recommendation">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="recommendation-contact">
+
+    <h2>רוצים גם אתם ליווי והשגחה מקצועיים?</h2>
+
+    <a class="whatsapp-btn"
+       href="https://wa.me/972526939350"
+       target="_blank">
+
+       יצירת קשר בוואטסאפ
+
+    </a>
+
+</div>
+</section>
+
+<footer>
+
+    <p>
+        © פואד - השגחה וליווי פרטי
+    </p>
+
+</footer>
+
+<div id="imageModal" class="modal">
+
+    <span class="close-modal">&times;</span>
+
+    <img class="modal-image" id="modalImage">
+
+</div>
+
+
+<script>
+
+const images =
+document.querySelectorAll(".recommendation-card img");
+
+const modal =
+document.getElementById("imageModal");
+
+const modalImage =
+document.getElementById("modalImage");
+
+const closeModal =
+document.querySelector(".close-modal");
+
+images.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        modal.style.display = "block";
+
+        modalImage.src = img.src;
+
+    });
+
+});
+
+closeModal.addEventListener("click", () => {
+
+    modal.style.display = "none";
+
+});
+
+modal.addEventListener("click", (e) => {
+
+    if(e.target === modal){
+
+        modal.style.display = "none";
+
+    }
+
+});
+
+</script>
+</body>
+
+</html>
