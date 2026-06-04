@@ -991,7 +991,7 @@ header{
 
 .navbar{
 
-    display:none;
+    backdrop-filter:blur(10px);
 
     position:absolute;
 
@@ -1000,8 +1000,8 @@ header{
     right:15px;
 
     width:220px;
-
-    background:white;
+    
+background:rgba(255,255,255,0.95);
 
     border-radius:15px;
 
@@ -1012,6 +1012,17 @@ header{
     text-align:right;
 
     z-index:1000;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-10px);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s;
 }
 
 .navbar a{
@@ -1038,7 +1049,11 @@ header{
 
 .navbar.active{
 
-    display:block;
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
 }
 
     .navbar a{
