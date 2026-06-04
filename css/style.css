@@ -19,6 +19,7 @@ header{
     align-items:center;
 
     padding:20px 10%;
+    position:relative;
 }
 
 nav a{
@@ -951,26 +952,94 @@ color:white;
 
 @media (max-width:768px){
 
-    .menu-toggle{
-        display:block;
-    }
+.logo{
 
-    .navbar{
+    margin:auto;
+}
 
-        display:none;
+header{
 
-        flex-direction:column;
+    min-height:90px;
 
-        width:100%;
+    justify-content:center;
+}
 
-        margin-top:15px;
+.menu-toggle{
 
-        text-align:center;
-    }
+    display:block;
 
-    .navbar.active{
-        display:flex;
-    }
+    position:absolute;
+
+    right:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:34px;
+
+    padding:0;
+
+    margin:0;
+}
+
+.navbar{
+
+    display:none;
+
+    position:absolute;
+
+    top:90px;
+
+    right:15px;
+
+    width:220px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:10px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+    text-align:right;
+
+    z-index:1000;
+}
+
+.navbar a{
+
+    display:block;
+
+    color:#0f5fa8;
+
+    padding:14px;
+
+    margin:0;
+
+    border-radius:10px;
+
+    font-size:18px;
+}
+
+.navbar a:hover{
+
+    background:#f5f8fb;
+
+    transform:none;
+}
+
+.navbar.active{
+
+    display:block;
+}
 
     .navbar a{
         margin:8px 0;
