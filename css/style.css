@@ -661,6 +661,11 @@ nav a:hover{
 
 @media (max-width: 768px){
 
+    .profile-image{
+    width:150px;
+    height:150px;
+}
+
     header{
         flex-direction:column;
         gap:15px;
@@ -933,4 +938,47 @@ color:white;
     color:white !important;
 
     transform:scale(1.08);
+}
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:32px;
+
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar{
+
+        display:none;
+
+        flex-direction:column;
+
+        width:100%;
+
+        margin-top:15px;
+
+        text-align:center;
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+    .navbar a{
+        margin:8px 0;
+    }
 }
