@@ -672,12 +672,6 @@ nav a:hover{
         text-align:center;
     }
 
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
 
     nav a{
         margin-right:0;
