@@ -991,8 +991,6 @@ header{
 
 .navbar{
 
-    backdrop-filter:blur(10px);
-
     position:absolute;
 
     top:90px;
@@ -1000,14 +998,16 @@ header{
     right:15px;
 
     width:220px;
-    
-background:rgba(255,255,255,0.95);
+
+    background:rgba(255,255,255,0.97);
+
+    backdrop-filter:blur(10px);
 
     border-radius:15px;
 
     padding:10px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    box-shadow:0 15px 40px rgba(0,0,0,0.18);
 
     text-align:right;
 
@@ -1017,12 +1017,12 @@ background:rgba(255,255,255,0.95);
 
     visibility:hidden;
 
-    transform:translateY(-10px);
+    transform:translateY(-30px) scale(0.95);
 
     transition:
-        opacity 0.2s ease,
-        transform 0.2s ease,
-        visibility 0.2s;
+        opacity 0.45s ease,
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0.45s;
 }
 
 .navbar a{
@@ -1053,7 +1053,7 @@ background:rgba(255,255,255,0.95);
 
     visibility:visible;
 
-    transform:translateY(0);
+    transform:translateY(0) scale(1);
 }
 
     .navbar a{
