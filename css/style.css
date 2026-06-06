@@ -1093,7 +1093,7 @@ header{
 
     display:inline-block;
 
-    margin:12px 0 18px;
+    margin:12px 0 40px;
 
     padding:12px 24px;
 
@@ -1140,7 +1140,7 @@ header{
 
     display:inline-block;
 
-    margin:12px 0 18px;
+    margin:12px 0 0px;
 
     padding:12px 24px;
 
@@ -1161,12 +1161,6 @@ header{
     transition:0.3s;
 }
 
-.reviews-btn:hover{
-
-    background:white;
-
-    color:#0f5fa8;
-}
 
 .reviews-btn:hover{
 
