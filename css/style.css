@@ -977,7 +977,7 @@ color:white;
 .hero p{
     font-size:16px;
     line-height:1.6;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 .reviews-btn{
@@ -1097,7 +1097,7 @@ header{
 
     display:inline-block;
 
-    margin:12px 0 40px;
+    margin:10px 0 12px;
 
     padding:12px 24px;
 
@@ -1134,6 +1134,11 @@ header{
     transform:translateY(-2px);
 
     box-shadow:0 6px 16px rgba(0,0,0,0.18);
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:0;
 }
 }
 
