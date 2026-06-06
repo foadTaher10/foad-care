@@ -1092,32 +1092,36 @@ header{
 
 
 
-
-.reviews-btn {
+.reviews-btn{
 
     display:inline-block;
 
-    margin:15px 0 20px;
+    margin:12px 0 18px;
 
-    padding:12px 22px;
+    padding:12px 24px;
 
-    background:white;
+    background:rgba(255,255,255,0.12);
 
-    color:#c79200;
+    color:white;
 
-    text-decoration:none;
-
-    border:2px solid #f4b400;
+    border:2px solid rgba(255,255,255,0.25);
 
     border-radius:30px;
 
-    font-weight:bold;
+    text-decoration:none;
 
-    font-size:1rem;
+    font-size:17px;
 
-    transition:all 0.3s ease;
+    font-weight:700;
 
-    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.reviews-btn:hover{
+
+    background:white;
+
+    color:#0f5fa8;
 }
 
 .reviews-btn:hover{
