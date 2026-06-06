@@ -690,10 +690,7 @@ nav a:hover{
         font-size:18px;
     }
 
-    .profile-image{
-        width:170px;
-        height:170px;
-    }
+
 
     .stats-container{
         flex-direction:column;
@@ -952,6 +949,37 @@ color:white;
 
 @media (max-width:768px){
 
+    .hero{
+    min-height:auto;
+    padding:40px 15px;
+}
+
+.profile-image{
+    width:130px;
+    height:130px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.hero-subtitle{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.reviews-btn{
+    margin:10px 0 15px;
+}
+
 .logo{
 
     margin:auto;
@@ -1059,4 +1087,46 @@ header{
     .navbar a{
         margin:8px 0;
     }
+}
+
+
+
+
+
+.reviews-btn {
+
+    display:inline-block;
+
+    margin:15px 0 20px;
+
+    padding:12px 22px;
+
+    background:white;
+
+    color:#c79200;
+
+    text-decoration:none;
+
+    border:2px solid #f4b400;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    font-size:1rem;
+
+    transition:all 0.3s ease;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+.reviews-btn:hover{
+
+    background:#f4b400;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 6px 16px rgba(0,0,0,0.18);
 }
