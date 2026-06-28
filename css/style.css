@@ -18,7 +18,7 @@ header{
     justify-content:space-between;
     align-items:center;
 
-    padding:20px 10%;
+    padding:0px 15px;
     position:relative;
 }
 
@@ -320,9 +320,13 @@ header{
 }
 
 .logo-sub{
-    font-size:12px;
-    opacity:0.9;
-    margin-top:3px;
+    display: none;
+}
+
+.picLogo{
+    height: 130px;
+    width: 100px;
+    display: block;
 }
 
 nav a{
@@ -671,9 +675,10 @@ nav a:hover{
 
     header{
         flex-direction:column;
-        gap:15px;
+        gap:10px;
         text-align:center;
     }
+
 
 
     nav a{
