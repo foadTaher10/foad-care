@@ -739,7 +739,8 @@ nav a:hover{
 .logo{
     flex-direction: column;
     gap: 4px;
-    align-items: center;
+    align-items:flex-start;
+    margin-left: 15px;
 }
 
 .logo-text{
