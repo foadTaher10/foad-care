@@ -676,88 +676,7 @@ nav a:hover{
     display:inline-block;
 }
 
-@media (max-width: 768px){
 
-    .profile-image{
-    width:150px;
-    height:150px;
-}
-
-    header{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-    }
-
-
-
-    nav a{
-        margin-right:0;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero-subtitle{
-        font-size:20px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
-
-
-
-    .stats-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .stat-box{
-        width:100%;
-        max-width:300px;
-    }
-
-    .about-container{
-        flex-direction:column;
-    }
-
-    .contact-page,
-    .about-page,
-    .services,
-    .coverage,
-    .faq,
-    .recommendations-page{
-        padding:50px 5%;
-    }
-
-    .logo-main{
-    display:none;
-}
-
-.logo{
-    flex-direction: column;
-    gap: 4px;
-    align-items:flex-start;
-    margin-left: 15px;
-}
-
-.logo-text{
-    align-items: center;
-}
-
-
-.picLogo{
-    width: 100px;
-    height: 100px;
-}
-
-.logo-sub{
-    font-size: 11px;
-}
-
-}
 
 .call-btn{
     display:inline-block;
@@ -991,6 +910,10 @@ color:white;
 
 @media (max-width:768px){
 
+ .logo-main{
+    display:none;
+}
+
 .hero{
     min-height:unset;
     height:auto;
@@ -1025,15 +948,25 @@ color:white;
 }
 
 .logo{
-
-    margin:auto;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
 }
 
+.logo{
+    position:absolute;
+    left:0px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+
+
 header{
-
     min-height:90px;
-
     justify-content:center;
+    position:relative;
 }
 
 .menu-toggle{
