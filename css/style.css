@@ -732,6 +732,30 @@ nav a:hover{
         padding:50px 5%;
     }
 
+    .logo-main{
+    display:none;
+}
+
+.logo{
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.logo-text{
+    align-items: center;
+}
+
+
+.picLogo{
+    width: 60px;
+    height: 60px;
+}
+
+.logo-sub{
+    font-size: 11px;
+}
+
 }
 
 .call-btn{
